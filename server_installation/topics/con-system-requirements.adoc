@@ -1,5 +1,6 @@
 
-=== System Requirements
+[id="con-system-requirements_{context}"]
+=== System requirements
 
 These are the requirements to run the {project_name} authentication server:
 
@@ -16,3 +17,4 @@ These are the requirements to run the {project_name} authentication server:
 * On Linux, it is recommended to use `/dev/urandom` as a source of random data to prevent {project_name} hanging due to lack of available
   entropy, unless `/dev/random` usage is mandated by your security policy. To achieve that on Oracle JDK 8 and OpenJDK 8, set the `java.security.egd`
   system property on startup to `file:/dev/urandom`.
+  

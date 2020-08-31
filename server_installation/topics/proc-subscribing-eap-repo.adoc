@@ -1,0 +1,26 @@
+[id="subscribing-eap-repo_{context}"]
+[[subscribing_EAP_repo]]
+
+==== Subscribing to the {appserver_name} {appserver_version} repository
+
+.Prerequisites
+
+* Ensure that your Red Hat Enterprise Linux system is registered to your account using Red Hat Subscription Manager. For more information see the link:https://access.redhat.com/documentation/en-us/red_hat_subscription_management/1/html-single/quick_registration_for_rhel/index[Red Hat Subscription Management documentation].
+
+* If you are already subscribed to another {appserver_name} repository, you must unsubscribe from that repository first.
+
+.Procedure
+
+* For Red Hat Enterprise Linux 6, 7: Using Red Hat Subscription Manager, subscribe to the {appserver_name} {appserver_version} repository using the following command. Replace <RHEL_VERSION> with either 6 or 7 depending on your Red Hat Enterprise Linux version.
+
+[source,bash,subs="attributes+"]
+----
+subscription-manager repos --enable=jb-eap-{appserver_version}-for-rhel-<RHEL_VERSION>-server-rpms --enable=rhel-<RHEL_VERSION>-server-rpms
+----
+
+* For Red Hat Enterprise Linux 8: Using Red Hat Subscription Manager, subscribe to the {appserver_name} {appserver_version} repository using the following command:
+
+[source,bash,subs="attributes+"]
+----
+subscription-manager repos --enable=jb-eap-{appserver_version}-for-rhel-8-x86_64-rpms --enable=rhel-8-for-x86_64-baseos-rpms --enable=rhel-8-for-x86_64-appstream-rpms
+----
