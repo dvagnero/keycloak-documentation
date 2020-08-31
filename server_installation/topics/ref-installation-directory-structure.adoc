@@ -1,5 +1,5 @@
-
-=== Distribution Directory Structure
+[id="ref-installation-distribution-directory_{context}"]
+=== Distribution directory structure
 
 This chapter walks you through the directory structure of the server distribution.
 

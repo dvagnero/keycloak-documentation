@@ -1,4 +1,5 @@
 
+[id="assembly-installation_{context}"]
 == Installation
 ifeval::[{project_community}==true]
 Installing {project_name} is as simple as downloading it and unzipping it. This chapter reviews system requirements
