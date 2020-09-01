@@ -1,5 +1,5 @@
-include::topics/overview.adoc[]
-include::topics/overview/recommended-reading.adoc[]
+include::topics/con-overview.adoc[]
+include::topics/overview/con-recommended-reading.adoc[]
 include::topics/installation.adoc[]
 include::topics/installation/system-requirements.adoc[]
 ifeval::[{project_community}==true]
