@@ -1,0 +1,26 @@
+[id="configuring-standalone-config-file_{context}"]
+= Configuring the `standalone.xml` file
+
+You can configure infrastructure-level aspects for {project_name}. These aspects are located in the `standalone.xml` file, which is specific to the application server that {project_name} originates.
+
+Additionally, you configure the file for non-infrastructure aspects that are specific to {project_name} components.
+
+[WARNING]
+====
+If the server is running, changes that you make to the`standalone.xml` file do not take effect and might be overwritten
+by the server.  Instead, use the command line scripting or the web console of {appserver_name}.
+====
+
+.Procedure
+. In the standalone operation mode, go the the directory containing the `standalone.xml` file:
++
+[source]
+----
+$ _.../standalone/configuration/standalone.xml_
+----
++
+
+image:{project_images}/standalone-config-file.png[]
+
+.Additional resources
+* See the link:{appserver_admindoc_link}[_{appserver_admindoc_name}_] for more information about command-line scripting or using the web console of {appserver_name}.

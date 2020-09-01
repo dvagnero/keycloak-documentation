@@ -1,0 +1,6 @@
+[id="overview-standalone-ha-mode_{context}"]
+= Overview of standalone clustered mode
+
+Use standalone clustered mode when you want to run {project_name} within a cluster. For this mode, you must have a copy of the {project_name} distribution on each machine you want to run the server instance, which can be cumbersome. However, standalone clustered mode is easy to deploy.
+
+If you want to make a configuration change, you must change each distribution on each machine.  For a large cluster this can become time consuming and error prone.

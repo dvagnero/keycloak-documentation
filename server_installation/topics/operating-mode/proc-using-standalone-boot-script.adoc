@@ -1,0 +1,32 @@
+[id="using-standalone-boot-script_{context}"]
+= Using the standalone boot script
+
+Depending on your operating system, you might need to run a script when to boot your server in standalone mode.
+
+[NOTE]
+====
+You can locate the scripts in the _bin/_ directory of the server distribution.
+====
+
+.Procedure
+
+. Go to the bin directory of your server distribution:
+image:{project_images}/standalone-boot-files.png[]
+
+. Locate the standalone boot script.
+
+. Boot the server:
+
+.. For a Linux or Unix operating system, issue the following command:
++
+[source]
+----
+$ .../bin/standalone.sh
+----
++
+.. For a Windows operating system, issue the following command:
++
+[source]
+----
+> ...\bin\standalone.bat
+----

@@ -1,0 +1,8 @@
+[id="overview-of-standalone-mode_{context}"]
+= Overview of standalone mode
+
+Use standalone operating mode when you want to run just one {project_name} server instance. Standalone mode is useful when you need to test or play with of {project_name} features.
+
+You must not use standalone mode in production, as you could introduce a single point of failure.  For example, if your standalone mode server goes down, users cannot log on to the server.
+
+For standalone mode, all caches are localized and cannot be distributed to clustered deployments. If you require a clustered deployments configuration, you must be in domain mode.

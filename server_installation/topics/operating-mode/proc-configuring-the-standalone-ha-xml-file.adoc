@@ -1,0 +1,43 @@
+[id="using-standalone-clustered-configuration_{context}"]
+= Configuring the `standalone-ha.xml` file
+
+The standalone clustered configuration has a pre-configured application server configuration file for running the server within a cluster. Further, it contains the specific infrastructure settings for networking, databases, caches, and discovery.
+
+The standalone clustered configuration resides in _.../standalone/configuration/standalone-ha.xml_.  This file has the following limitations:
+
+* You cannot run {project_name} in a cluster without configuring a shared database connection.
+* You need to deploy a load balancer in front of the cluster.
+
+[WARNING]
+====
+If the server is running, changes that you make to the`standalone-ha.xml` file do not take effect and might be overwritten
+by the server.  Instead, use the command line scripting or the web console of {appserver_name}.
+====
+
+.Procedure
+. Locate the `standalone-ha.xml` file in your project:
+image:{project_images}/standalone-ha-config-file.png[standalone-ha-config-file.png]
+
+. You can use the same boot scripts used to start {project_name} in standalone mode.  However, point the additonal flag to the HA config file:
+
+image:{project_images}/standalone-boot-files.png[]
+
+. Boot the server:
+
+.. For a Linux or Unix operating system, issue the following command:
++
+[source]
+----
+$ .../bin/standalone.sh --server-config=standalone-ha.xml
+----
++
+.. For a Windows operating system, issue the following command:
++
+[source]
+----
+> ...\bin\standalone.bat --server-config=standalone-ha.xml
+----
++
+.Additional resources
+* See xref:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html-single/server_installation_and_configuration_guide/index#clustering[Clustering] for information about configuring Red Hat Single Sign-On to run in a cluster.
+* See xref:https://access.redhat.com/documentation/en-us/red_hat_single_sign-on/7.4/html-single/server_installation_and_configuration_guide/index#database-1[Relational Database Setup] for information about the default database that Red Hat Single Sign-On.
