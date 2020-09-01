@@ -1,14 +1,13 @@
-[[_config_spi_providers]]
+[id="spi-provider-configuration_{context}"]
+= SPI provider configuration
 
-=== Configure SPI Providers
-
-The specifics of each configuration setting is discussed elsewhere in 
+The specifics of each configuration setting are discussed elsewhere in 
 context with that setting.  However, it is useful to understand the format used
 to declare settings on SPI providers. 
 
 {project_name} is a highly modular system that allows great
 flexibility.  There are more than 50 service provider interfaces (SPIs), and
-you are allowed to swap out implementations of each SPI.  An implementation of 
+you can swap out implementations of each SPI.  An implementation of 
 an SPI is known as a _provider_.
 
 All elements in an SPI declaration are optional, but a full SPI declaration

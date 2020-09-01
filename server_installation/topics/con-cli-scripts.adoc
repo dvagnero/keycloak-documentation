@@ -1,0 +1,20 @@
+[id="cli-scripts_{context}"]
+= CLI scripts
+
+The CLI has extensive scripting capabilities.  A script is a text
+file that includes CLI commands.  
+
+The following example script turns off theme and template caching.
+
+.turn-off-caching.cli
+[source]
+----
+/subsystem=keycloak-server/theme=defaults/:write-attribute(name=cacheThemes,value=false)
+/subsystem=keycloak-server/theme=defaults/:write-attribute(name=cacheTemplates,value=false)
+----
+To execute the script, use the `Scripts` menu in the CLI GUI, or execute the
+script from the command line
+[source]
+----
+$ .../bin/jboss-cli.sh --file=turn-off-caching.cli
+----

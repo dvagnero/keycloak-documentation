@@ -1,0 +1,45 @@
+[id="starting_cli_{context}"]
+
+= Starting the {appserver_name} CLI
+You can modify configurations using the _jboss-cli_ tool.  
+
+You can use the CLI  to configure servers locally or remotely.  The CLI is especially useful when
+combined with scripting.
+
+. To start the {appserver_name} CLI, run `jboss-cli`.
++
+.Linux/Unix
+[source]
+----
+$ .../bin/jboss-cli.sh
+----
++
+.Windows
+[source]
+----
+> ...\bin\jboss-cli.bat
+----
++
+The system returns a prompt like this:
++
+.Prompt
+[source]
+----
+[disconnected /]
+----
+
+. To execute commands on a running server, execute the `connect` command.
++
+.connect
+[source]
+----
+[disconnected /] connect
+connect
+[standalone@localhost:9990 /]
+----
++
+If you run `jboss-cli` on the same machine
+as your running standalone server or domain controller and your account has appropriate file permissions, you do not have
+to setup or enter in an admin username and password.  See the link:{appserver_admindoc_link}[_{appserver_admindoc_name}_]
+for details about how to make things more secure if you are uncomfortable with that setup.
+

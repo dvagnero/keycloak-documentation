@@ -1,0 +1,23 @@
+[id="change-configurations-gui-mode_{context}"]
+= Changing configuration using GUI mode
+
+You can run the CLI in GUI mode.  
+
+GUI mode launches a Swing application you can use to graphically view and edit the entire management model of a _running_ server.
+GUI mode is especially useful when you need help formatting your CLI commands and learning about the options available.  The GUI can also retrieve server logs from a local or remote server.
+
+. Start in GUI mode.
++
+[source]
+----
+$ .../bin/jboss-cli.sh --gui
+----
+NOTE: To connect to a remote server, pass the `--connect` option. Use the --help option for more details.
+
+. Scroll down to find the node `subsystem=keycloak-server`.  
+
+. Right-click on the node and click `Explore subsystem=keycloak-server`.
++
+The system displays a tab that shows only the keycloak-server subsystem.
+
+image:images/cli-gui.png[]

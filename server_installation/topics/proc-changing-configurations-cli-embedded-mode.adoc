@@ -1,0 +1,14 @@
+[id="changing-configurations-cli-embedded-mode_{context}"]
+= Changing configurations using CLI embedded mode
+If you are on the same machine as your standalone server and you want to
+issue commands while the server is not active, you can embed the server into the CLI and make
+changes in a special mode that disallows incoming requests.  
+
+. Execute the `embed-server` command with the config file you want to change.
++
+.embed-server
+[source]
+----
+[disconnected /] embed-server --server-config=standalone.xml
+[standalone@embedded /]
+----
